@@ -16,6 +16,7 @@
 	<file>.</file>
 
 	<!-- Ignore vendor files. -->
+	<exclude-pattern>*/**.min.*</exclude-pattern>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 
