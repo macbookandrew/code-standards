@@ -22,7 +22,6 @@
 	<file>.</file>
 
 	<!-- Ignore vendor files. -->
-	<exclude-pattern>*/**.min.*</exclude-pattern>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 
@@ -62,7 +61,7 @@
 	</rule>
 
 	<!-- Include sniffs for PHP cross-version compatibility. -->
-	<config name="testVersion" value="5.2-99.0"/>
+	<config name="testVersion" value="7.0-99.0"/>
 
 	<!-- Include PHP rules. -->
 	<rule ref="PHPCompatibility" />
