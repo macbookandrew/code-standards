@@ -1,30 +1,44 @@
 These are general rulesets for PHP Code Sniffer.
 
+- [About](#about)
 - [Usage](#usage)
-- [Laravel](#laravel)
-- [WordPress](#wordpress)
-  - [Initial Setup](#initial-setup)
-  - [Project Setup](#project-setup)
-    - [Minimum Versions](#minimum-versions)
-    - [Translation](#translation)
+  - [CLI](#cli)
+  - [IDE](#ide)
+- [Frameworks](#frameworks)
+  - [Laravel](#laravel)
+  - [WordPress](#wordpress)
+    - [Initial Setup](#initial-setup)
+    - [Project Setup](#project-setup)
+      - [Minimum Versions](#minimum-versions)
+      - [Translation](#translation)
+
+# About
+
+[PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) is a set of two PHP scripts; the main phpcs script that tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard, and a second phpcbf script to automatically correct coding standard violations. PHP_CodeSniffer is an essential development tool that ensures your code remains clean and consistent.
 
 # Usage
 
-[PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) is a set of two PHP scripts; the main phpcs script that tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard, and a second phpcbf script to automatically correct coding standard violations. PHP_CodeSniffer is an essential development tool that ensures your code remains clean and consistent.
+## CLI
+
+Run `phpcs` on the command line to scan all PHP scripts in the current directory. See `phpcs --help` for more information.
+
+## IDE
 
 This is the current `phpcs` plugin for Visual Studio Code: [https://marketplace.visualstudio.com/items?itemName=shevaua.phpcs](https://marketplace.visualstudio.com/items?itemName=shevaua.phpcs)
 
 Recommended: in Visual Studio Code, set the default PHPCS standard to the plugin ruleset from this repo. Edit your `settings.json` and add this line: `"phpcs.standard": "/Users/<your name>/repositories/phpcs-rulesets/WordPress/plugin/phpcs.xml",`
 
-# Laravel
+# Frameworks
 
-See [Usage](#usage); there is no special usage required.
+## Laravel
 
-# WordPress
+See [usage](#usage) above; there is no special setup required.
+
+## WordPress
 
 Read about the [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/).
 
-## Initial Setup
+### Initial Setup
 
 These WordPress and third-party coding standard repos must first be installed and added to PHPCS’ `installed_paths`:
 
@@ -43,14 +57,14 @@ git clone git@github.com:WordPress-Coding-Standards/WordPress-Coding-Standards.g
 phpcs --config-set installed_paths /Users/$(whoami)/repositories/PHPCompatibility/,/Users/$(whoami)/repositories/PHPCompatibilityParagonie/PHPCompatibilityParagonieRandomCompat/,/Users/$(whoami)/repositories/PHPCompatibilityParagonie/PHPCompatibilityParagonieSodiumCompat/,/Users/$(whoami)/repositories/PHPCompatibilityWP/PHPCompatibilityWP/,/Users/$(whoami)/repositories/WordPress-Coding-Standards/WordPress/,/Users/$(whoami)/repositories/WordPress-Coding-Standards/WordPress-Core/,/Users/$(whoami)/repositories/WordPress-Coding-Standards/WordPress-Docs/,/Users/$(whoami)/repositories/WordPress-Coding-Standards/WordPress-Extra/
 ```
 
-## Project Setup
+### Project Setup
 
-### Minimum Versions
+#### Minimum Versions
 
 By default, PHP 7.0 is set as the minimum supported version, and deprecated functions will be flagged.
 
 By default, WordPress 4.8 is set as the minimum supported version, and deprecated functions will be flagged.
 
-### Translation
+#### Translation
 
 Set the `WordPress.WP.I18n` rule’s `text_domain` property to your plugin/theme’s text domain. If you’re creating a child theme (Genesis), extending another plugin, or including templates from another plugin (WooCommerce, etc.), you can add those text domains as a comma-separated list.
