@@ -12,6 +12,10 @@ These are general rulesets for PHP Code Sniffer.
 
 [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) is a set of two PHP scripts; the main phpcs script that tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard, and a second phpcbf script to automatically correct coding standard violations. PHP_CodeSniffer is an essential development tool that ensures your code remains clean and consistent.
 
+This is the current `phpcs` plugin for Visual Studio Code: [https://marketplace.visualstudio.com/items?itemName=shevaua.phpcs](https://marketplace.visualstudio.com/items?itemName=shevaua.phpcs)
+
+Recommended: in Visual Studio Code, set the default PHPCS standard to the plugin ruleset from this repo. Edit your `settings.json` and add this line: `"phpcs.standard": "/Users/<your name>/repositories/phpcs-rulesets/WordPress/plugin/phpcs.xml",`
+
 # Laravel
 
 See [Usage](#usage); there is no special usage required.
