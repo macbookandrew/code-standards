@@ -29,9 +29,11 @@ Read about the [WordPress Coding Standards](https://make.wordpress.org/core/hand
 These WordPress and third-party coding standard repos must first be installed and added to PHPCS’ `installed_paths`:
 
 ```bash
+# create directory to store rulests
 mkdir -p ~/repositories
 cd ~/repositories/
 
+# clone rulesets
 git clone git@github.com:PHPCompatibility/PHPCompatibility.git
 git clone git@github.com:PHPCompatibility/PHPCompatibilityParagonie.git
 git clone git@github.com:PHPCompatibility/PHPCompatibilityWP.git
