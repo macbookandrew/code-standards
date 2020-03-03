@@ -45,9 +45,9 @@ phpcs --config-set installed_paths /Users/$(whoami)/repositories/PHPCompatibilit
 
 ### Minimum Versions
 
-By default, PHP 7.0 is set as the minimum version, and deprecated functions will be flagged.
+By default, PHP 7.0 is set as the minimum supported version, and deprecated functions will be flagged.
 
-The WordPress minimum version can also be set to flag deprecated functions/methods.
+By default, WordPress 4.8 is set as the minimum supported version, and deprecated functions will be flagged.
 
 ### Translation
 
