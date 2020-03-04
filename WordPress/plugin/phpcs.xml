@@ -26,7 +26,10 @@
 
 	<!-- Set any exclusions. -->
 	<rule ref="WordPress">
-		<!-- exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" / -->
+		<!-- <exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" /> -->
+
+		<!-- Disable the rule below if you’re using PSR-4 namespacing and capitalized class names. -->
+		<!-- <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" /> -->
 	</rule>
 
 	<!-- Verify that the text_domain is set to the desired text-domain.
