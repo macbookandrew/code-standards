@@ -1,4 +1,6 @@
-These are general rulesets for PHP Code Sniffer.
+# Contents
+
+[LuminFire Code Standards](https://git.luminfire.net/ops/tooling/code-standards/phpcs-rulesets)
 
 - [About](#about)
 - [Initial Setup](#initial-setup)
@@ -38,7 +40,7 @@ phpcs --config-set installed_paths /Users/$(whoami)/codestandards/PHPCompatibili
 # verify that PHPCS knows about them
 phpcs -i
 
-git clone git@git.luminfire.net:tooling/code-standards/phpcs-rulesets.git
+git clone git@git.luminfire.net:ops/tooling/code-standards/phpcs-rulesets.git
 ```
 
 # Usage
