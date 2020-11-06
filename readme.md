@@ -24,22 +24,25 @@
 Install the code standards below and add them to PHPCS’ `installed_paths`, then clone this repo to get the starter rulesets.
 
 ```bash
-# create directory to store rulests
-mkdir -p ~/codestandards
-cd ~/codestandards/
+# Install PHPCS
+composer global require "squizlabs/php_codesniffer=*"
 
-# clone rulesets
-git clone git@github.com:PHPCompatibility/PHPCompatibility.git
-git clone git@github.com:PHPCompatibility/PHPCompatibilityParagonie.git
-git clone git@github.com:PHPCompatibility/PHPCompatibilityWP.git
-git clone git@github.com:WordPress-Coding-Standards/WordPress-Coding-Standards.git
+# Install plugin manager (eliminates need to manually set installed_paths)
+composer global require dealerdirect/phpcodesniffer-composer-installer
 
-# configure PHPCS
-phpcs --config-set installed_paths /Users/$(whoami)/codestandards/PHPCompatibility/,/Users/$(whoami)/codestandards/PHPCompatibilityParagonie/PHPCompatibilityParagonieRandomCompat/,/Users/$(whoami)/codestandards/PHPCompatibilityParagonie/PHPCompatibilityParagonieSodiumCompat/,/Users/$(whoami)/codestandards/PHPCompatibilityWP/PHPCompatibilityWP/,/Users/$(whoami)/codestandards/WordPress-Coding-Standards/WordPress/,/Users/$(whoami)/codestandards/WordPress-Coding-Standards/WordPress-Core/,/Users/$(whoami)/codestandards/WordPress-Coding-Standards/WordPress-Docs/,/Users/$(whoami)/codestandards/WordPress-Coding-Standards/WordPress-Extra/
+# Install sniffs
+composer global require wp-coding-standards/wpcs phpcompatibility/php-compatibility phpcompatibility/phpcompatibility-paragonie phpcompatibility/phpcompatibility-wp
 
-# verify that PHPCS knows about them
+# You may or may not need these
+composer global require phpcsstandards/phpcsutils:@alpha phpcsstandards/phpcsextra:@alpha
+
+# Verify that PHPCS knows about them
 phpcs -i
 
+# Expect to a list like this including several PHPCompatibility and WordPress entries:
+# The installed coding standards are PEAR, Zend, PSR2, MySource, Squiz, PSR1, PSR12, PHPCompatibility, PHPCompatibilityParagonieRandomCompat, PHPCompatibilityParagonieSodiumCompat, PHPCompatibilityWP, WordPress, WordPress-Extra, WordPress-Docs and WordPress-Core
+
+# Clone this repo with starter project rulesets.
 git clone git@git.luminfire.net:ops/tooling/code-standards/phpcs-rulesets.git
 ```
 
@@ -58,7 +61,7 @@ This is the current `phpcs` plugin for Visual Studio Code: [https://marketplace.
 Recommended: in Visual Studio Code, set the default PHPCS standard to the plugin ruleset from this repo so all code is treated as WordPress by default.
 
 - Open VS Code preferences (Code menu > Preferences > Settings), search for `phpcs.showSources`, and enable the checkbox.
-- Search for `phpcs.standard` and click the `Edit in settings.json` link and add this line: `"phpcs.standard": "/Users/<your name>/codestandards/phpcs-rulesets/WordPress/plugin/phpcs.xml",`
+- Search for `phpcs.standard` and click the `Edit in settings.json` link and add this line: `"phpcs.standard": "{path to this repo}/WordPress/plugin/phpcs.xml",`
 
 # Whitelisting
 
