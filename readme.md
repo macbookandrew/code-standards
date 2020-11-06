@@ -24,6 +24,13 @@
 Install the code standards below and add them to PHPCS’ `installed_paths`, then clone this repo to get the starter rulesets.
 
 ```bash
+# Install PHPCS
+composer global require "squizlabs/php_codesniffer=*"
+
+# Additional packages required by WP
+composer global require phpcsstandards/phpcsutils:@alpha
+composer global require phpcsstandards/phpcsextra:@alpha
+
 # create directory to store rulests
 mkdir -p ~/codestandards
 cd ~/codestandards/
