@@ -42,7 +42,6 @@ phpcs -i
 # The installed coding standards are PEAR, Zend, PSR2, MySource, Squiz, PSR1, PSR12, PHPCompatibility, PHPCompatibilityParagonieRandomCompat, PHPCompatibilityParagonieSodiumCompat, PHPCompatibilityWP, WordPress, WordPress-Extra, WordPress-Docs and WordPress-Core
 
 # Clone this repo with starter project rulesets.
-git clone git@git.luminfire.net:ops/tooling/code-standards/phpcs-rulesets.git
 ```
 
 # Usage
