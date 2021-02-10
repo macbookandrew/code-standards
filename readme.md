@@ -2,6 +2,7 @@
 
 [LuminFire Code Standards](https://git.luminfire.net/ops/tooling/code-standards/phpcs-rulesets)
 
+- [Contents](#contents)
 - [About](#about)
 - [Initial Setup](#initial-setup)
 - [Usage](#usage)
@@ -31,10 +32,8 @@ composer global require "squizlabs/php_codesniffer=*"
 composer global require dealerdirect/phpcodesniffer-composer-installer
 
 # Install sniffs
-composer global require wp-coding-standards/wpcs phpcompatibility/php-compatibility phpcompatibility/phpcompatibility-paragonie phpcompatibility/phpcompatibility-wp
+composer global require wp-coding-standards/wpcs phpcompatibility/php-compatibility phpcompatibility/phpcompatibility-paragonie phpcompatibility/phpcompatibility-wp require phpcsstandards/phpcsutils:@alpha phpcsstandards/phpcsextra:@alpha pheromone/phpcs-security-audit
 
-# You may or may not need these
-composer global require phpcsstandards/phpcsutils:@alpha phpcsstandards/phpcsextra:@alpha
 
 # Verify that PHPCS knows about them
 phpcs -i
