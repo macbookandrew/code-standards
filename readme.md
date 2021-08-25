@@ -20,6 +20,8 @@
 
 [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) is a set of two PHP scripts; the main `phpcs` script that tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard, and a second `phpcbf` script to automatically correct coding standard violations. PHP_CodeSniffer is an essential development tool that ensures your code remains clean and consistent.
 
+[Larastan](https://github.com/nunomaduro/larastan) is a static analyzer for Laravel apps. See that project for more documentation.
+
 # Initial Setup
 
 Install the code standards below and add them to PHPCS’ `installed_paths`, then clone this repo to get the starter rulesets.
@@ -84,6 +86,8 @@ On occasion, you may need to disable an error or class of errors for multiple li
 ## Laravel
 
 See [usage](#usage) above; there is no special setup required.
+
+For static analysis, copy `Laravel/phpstan.neon.dist` to your project and run `composer require --dev nunomaduro/larastan`.
 
 ## WordPress
 
