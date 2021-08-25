@@ -32,7 +32,11 @@ composer global require "squizlabs/php_codesniffer=*"
 composer global require dealerdirect/phpcodesniffer-composer-installer
 
 # Install sniffs
-composer global require wp-coding-standards/wpcs phpcompatibility/php-compatibility phpcompatibility/phpcompatibility-paragonie phpcompatibility/phpcompatibility-wp phpcsstandards/phpcsutils:@alpha phpcsstandards/phpcsextra:@alpha pheromone/phpcs-security-audit
+composer global require wp-coding-standards/wpcs \
+    phpcompatibility/php-compatibility \
+    phpcompatibility/phpcompatibility-paragonie \
+    phpcompatibility/phpcompatibility-wp \
+    pheromone/phpcs-security-audit
 
 
 # Verify that PHPCS knows about them
