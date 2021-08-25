@@ -62,7 +62,7 @@ Run `phpcbf` on the command line to automatically fix common formatting errors a
 
 This is the current `phpcs` plugin for Visual Studio Code: [https://marketplace.visualstudio.com/items?itemName=shevaua.phpcs](https://marketplace.visualstudio.com/items?itemName=shevaua.phpcs)
 
-Recommended: in Visual Studio Code, set the default PHPCS standard to the plugin ruleset from this repo so all code is treated as WordPress by default.
+Recommended global setting for WordPress developers: in Visual Studio Code, set the default PHPCS standard to the plugin ruleset from this repo so all code is treated as WordPress by default.
 
 - Open VS Code preferences (Code menu > Preferences > Settings), search for `phpcs.showSources`, and enable the checkbox.
 - Search for `phpcs.standard` and click the `Edit in settings.json` link and add this line: `"phpcs.standard": "{path to this repo}/WordPress/plugin/phpcs.xml",`
