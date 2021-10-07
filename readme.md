@@ -22,6 +22,8 @@
 
 [Larastan](https://github.com/nunomaduro/larastan) is a static analyzer for Laravel apps. See that project for more documentation.
 
+[Tighten Lint](https://github.com/tighten/tlint) is an opinionated code linter for Laravel projects. See that project for more information.
+
 # Initial Setup
 
 Install the code standards below and add them to PHPCS’ `installed_paths`, then clone this repo to get the starter rulesets.
