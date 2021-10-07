@@ -87,7 +87,9 @@ On occasion, you may need to disable an error or class of errors for multiple li
 
 See [usage](#usage) above; there is no special setup required.
 
-For static analysis, copy `Laravel/phpstan.neon.dist` to your project and run `composer require --dev nunomaduro/larastan`.
+For static analysis, copy `Laravel/phpstan.neon.dist` to your project and run `composer require --dev nunomaduro/larastan`. Suggested VS Code extension: [PHPStan by swordev](https://marketplace.visualstudio.com/items?itemName=swordev.phpstan)
+
+For Tighten Lint, copy `Laravel/tlint.json` to your project. Suggested VS Code extension: [tighten-lint by David Walker](https://marketplace.visualstudio.com/items?itemName=d9705996.tighten-lint)
 
 ## WordPress
 
