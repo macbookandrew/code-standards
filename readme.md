@@ -2,19 +2,7 @@
 
 [LuminFire Code Standards](https://git.luminfire.net/ops/tooling/code-standards/phpcs-rulesets)
 
-- [Contents](#contents)
-- [About](#about)
-- [Initial Setup](#initial-setup)
-- [Usage](#usage)
-  - [CLI](#cli)
-  - [IDE](#ide)
-- [Whitelisting](#whitelisting)
-- [Frameworks](#frameworks)
-  - [Laravel](#laravel)
-  - [WordPress](#wordpress)
-    - [Project Setup](#project-setup)
-      - [Minimum Versions](#minimum-versions)
-      - [Translations](#translations)
+[[_TOC_]]
 
 # About
 
