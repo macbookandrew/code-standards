@@ -1,4 +1,6 @@
 {
     "disabled": ["QualifiedNamesOnlyForClassName"],
-    "excluded": []
+    "excluded": [
+        "vendor/"
+    ]
 }
