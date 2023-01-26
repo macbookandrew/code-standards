@@ -1,0 +1,14 @@
+parameters:
+
+    paths:
+        # Recommended: scope to only first-party plugins/themes
+        - wp-content/plugins
+
+    # The level 8 is the highest level
+    level: 5
+
+    excludePaths:
+        - ./*/*/FileToBeExcluded.php
+        - wp-admin/includes/noop.php
+        - wp-content/plugins/wordfence/waf/
+        - wp-content/plugins/wp-time-capsule/wp-tcapsule-bridge/
