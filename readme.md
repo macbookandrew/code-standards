@@ -2,7 +2,7 @@
 
 [LuminFire Code Standards](https://git.luminfire.net/ops/tooling/code-standards/phpcs-rulesets)
 
-[[_TOC_]]
+[TOC]
 
 # About
 
