@@ -8,9 +8,14 @@
 
 [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) is a set of two PHP scripts; the main `phpcs` script that tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard, and a second `phpcbf` script to automatically correct coding standard violations. PHP_CodeSniffer is an essential development tool that ensures your code remains clean and consistent.
 
-[Larastan](https://github.com/nunomaduro/larastan) is a static analyzer for Laravel apps. See that project for more documentation.
+[PHPStan](https://phpstan.org) is a static analyzer that finds bugs by reading your code.
 
-[Tighten Lint](https://github.com/tighten/tlint) is an opinionated code linter for Laravel projects. See that project for more information.
+- Laravel: use [Larastan](https://github.com/nunomaduro/larastan):
+  - `composer require nunomaduro/larastan --dev`
+- WordPress: use [WordPress extensions for PHPStan](https://github.com/szepeviktor/phpstan-wordpress)
+  - `composer require szepeviktor/phpstan-wordpress phpstan/extension-installer --dev`
+
+~~[Tighten Lint](https://github.com/tighten/tlint) is an opinionated code linter for Laravel projects. See that project for more information.~~ [Laravel Pint](https://github.com/laravel/pint) is an opinionated PHP code style fixer for minimalists.
 
 # Initial Setup
 
@@ -77,9 +82,11 @@ On occasion, you may need to disable an error or class of errors for multiple li
 
 See [usage](#usage) above; there is no special setup required.
 
-For static analysis, copy `Laravel/phpstan.neon.dist` to your project and run `composer require --dev nunomaduro/larastan`. Suggested VS Code extension: [PHPStan by swordev](https://marketplace.visualstudio.com/items?itemName=swordev.phpstan)
+For static analysis, copy the relevant `phpstan.neon.dist` to your project and run the relevant installation command. Suggested VS Code extension: [PHPStan by swordev](https://marketplace.visualstudio.com/items?itemName=swordev.phpstan)
 
-For Tighten Lint, copy `Laravel/tlint.json` to your project. Suggested VS Code extension: [tighten-lint by David Walker](https://marketplace.visualstudio.com/items?itemName=d9705996.tighten-lint)
+~~For Tighten Lint, copy `Laravel/tlint.json` to your project. Suggested VS Code extension: [tighten-lint by David Walker](https://marketplace.visualstudio.com/items?itemName=d9705996.tighten-lint)~~
+
+For Laravel Pint, run `pint` or `pint --dirty`. Suggested VS Code extension: [Laravel Pint](https://marketplace.visualstudio.com/items?itemName=open-southeners.laravel-pint)
 
 ## WordPress
 
